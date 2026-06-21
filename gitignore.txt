@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────────────────────
+# .gitignore — Cinema vs. Streaming Analysis
+# ─────────────────────────────────────────────────────────────
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter Notebook ─────────────────────────────────────────
+# Auto-generated checkpoint folders when saving the notebook
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ── Notebook-Generated Output Files ──────────────────────────
+# imdb_scatter_plot.png is auto-saved by cell 3.8 (plt.savefig)
+# Excluded here regardless of which subfolder the notebook runs from
+imdb_scatter_plot.png
+**/imdb_scatter_plot.png
+*.log
+*.tmp
+
+# ── Tableau Desktop (precaution) ─────────────────────────────
+# Not needed if using Tableau Public only, but safe to include
+.tableau/
+*.twbx
+*.twb
+
+# NOTE: Tableau dashboard screenshots in tableau/screenshots/ are
+# intentionally NOT ignored — they are source files for the README.
+
+# ── OS Generated Files ────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
